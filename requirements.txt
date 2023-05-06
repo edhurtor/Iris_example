@@ -1,3 +1,5 @@
+orange-canvas-core==0.1.31
+orange-widget-base==4.21.0
 Orange3==3.35.0
 streamlit==1.22.0
 pickleshare==0.7.5
