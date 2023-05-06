@@ -1,13 +1,13 @@
 # Importar librerías
 import pickle
-#import Orange
+# import Orange
 import numpy as np
 import streamlit as st
 
-#Cargar modelo .pkcls
-#model = pickle.load(open('/content/Logistic_IRIS.pkcls', 'rb'))
-#Guardar y cargar modelo como .pkl
-#pickle.dump(model, open('/content/Logistic_IRIS.pkl', 'wb'))
+# Cargar modelo .pkcls
+# model = pickle.load(open('/content/Logistic_IRIS.pkcls', 'rb'))
+# Guardar y cargar modelo como .pkl
+# pickle.dump(model, open('/content/Logistic_IRIS.pkl', 'wb'))
 model_loaded=pickle.load(open('Logistic_IRIS.pkl', 'rb'))
 
 # Interfaz de entrada de datos con streamlit
@@ -27,6 +27,6 @@ pred = model_loaded.predict(x_in)
 species_dict = {0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'}
 species_names = [species_dict[int(pred[0])]]
 
-#Salida página web en Streamlit
+# Salida página web en Streamlit
 st.subheader('Pronóstico Iris')
 st.text(species_names[0])
