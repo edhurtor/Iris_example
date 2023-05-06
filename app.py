@@ -8,7 +8,7 @@ import streamlit as st
 #model = pickle.load(open('/content/Logistic_IRIS.pkcls', 'rb'))
 #Guardar y cargar modelo como .pkl
 #pickle.dump(model, open('/content/Logistic_IRIS.pkl', 'wb'))
-model_loaded=pickle.load(open('/content/Logistic_IRIS.pkl', 'rb'))
+model_loaded=pickle.load(open('Logistic_IRIS.pkl', 'rb'))
 
 # Interfaz de entrada de datos con streamlit
 st.set_page_config(page_title='ML Model')
