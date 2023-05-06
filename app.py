@@ -1,6 +1,6 @@
 # Instalar pkts
-pip install Orange3
-pip install PyQt5
+#pip install Orange3
+#pip install PyQt5
 # Importar librerías
 import pickle
 import Orange
