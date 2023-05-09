@@ -5,9 +5,9 @@ import numpy as np
 import streamlit as st
 
 # Cargar modelo .pkcls
-# model = pickle.load(open('/content/Logistic_IRIS.pkcls', 'rb'))
+model = pickle.load(open('Logistic_IRIS.pkcls', 'rb'))
 # Guardar y cargar modelo como .pkl
-# pickle.dump(model, open('/content/Logistic_IRIS.pkl', 'wb'))
+pickle.dump(model, open('Logistic_IRIS.pkl', 'wb'))
 model_loaded=pickle.load(open('Logistic_IRIS.pkl', 'rb'))
 
 # Interfaz de entrada de datos con streamlit
